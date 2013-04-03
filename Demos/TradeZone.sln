@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeZone", "TradeZone\TradeZone.csproj", "{E3A4A3A3-ED69-45B7-94B6-4076FF6C5981}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B3EA679C-8089-4CC3-943F-35CBEE2FC51A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3A4A3A3-ED69-45B7-94B6-4076FF6C5981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A4A3A3-ED69-45B7-94B6-4076FF6C5981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A4A3A3-ED69-45B7-94B6-4076FF6C5981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A4A3A3-ED69-45B7-94B6-4076FF6C5981}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

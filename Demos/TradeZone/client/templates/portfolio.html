@@ -1,0 +1,32 @@
+﻿<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td style="width: 50%"><h4>Company</h4></td>
+            <td><h4>Symbol</h4></td>
+            <td><h4>Open</h4></td>
+            <td><h4>High</h4></td>
+            <td><h4>Low</h4></td>
+            <td><h4>Last</h4></td>
+            <td><h4>Up</h4></td>
+            <td><h4>Volume</h4></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="company in homeViewModel.companiesFiltered()">
+            <td>
+                <h4>{{company.name}}</h4>
+            </td>
+            <td>{{company.symbol}}</td>
+            <td>{{company.open | number:2}}</td>
+            <td>{{company.high | number:2}}</td>
+            <td>{{company.low | number:2}}</td>
+            <td>{{company.last | number:2}}</td>
+            <td>{{company.up}}</td>
+            <td>{{company.volume | number:0}}</td>
+            <td>
+            <button class="btn btn-warning" ng-click="homeViewModel.startStreaming(company)">Stream</button></td>
+        </tr>
+     
+    </tbody>
+</table>

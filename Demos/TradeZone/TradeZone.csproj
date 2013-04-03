@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{E3A4A3A3-ED69-45B7-94B6-4076FF6C5981}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="client\app.ts" />
+    <Content Include="client\app.js">
+      <DependentUpon>app.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app.min.js">
+      <DependentUpon>app.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="client\app\interfaces.ts" />
+    <TypeScriptCompile Include="client\app\filters.ts" />
+    <TypeScriptCompile Include="client\app\controllers.ts" />
+    <Content Include="client\app\controllers.js">
+      <DependentUpon>controllers.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\controllers.min.js">
+      <DependentUpon>controllers.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="client\app\directives.ts" />
+    <Content Include="client\app\directives.js">
+      <DependentUpon>directives.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\directives.min.js">
+      <DependentUpon>directives.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\filters.js">
+      <DependentUpon>filters.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\filters.min.js">
+      <DependentUpon>filters.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\interfaces.js">
+      <DependentUpon>interfaces.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="client\app\services.ts" />
+    <TypeScriptCompile Include="client\app\model.ts" />
+    <Content Include="client\app\interfaces.min.js">
+      <DependentUpon>interfaces.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\model.js">
+      <DependentUpon>model.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\model.min.js">
+      <DependentUpon>model.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\services.js">
+      <DependentUpon>services.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="client\app\viewmodels.ts" />
+    <Content Include="client\app\services.min.js">
+      <DependentUpon>services.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\viewmodels.js">
+      <DependentUpon>viewmodels.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\viewmodels.min.js">
+      <DependentUpon>viewmodels.ts</DependentUpon>
+    </Content>
+    <Content Include="client\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="client\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="client\bootstrap\css\bootstrap.css" />
+    <Content Include="client\bootstrap\css\bootstrap.min.css" />
+    <Content Include="client\bootstrap\fontawesome\fontawesome\css\font-awesome.css" />
+    <Content Include="client\bootstrap\fontawesome\fontawesome\font\fontawesome-webfont.svg" />
+    <Content Include="client\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="client\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="client\bootstrap\js\bootstrap.js" />
+    <Content Include="client\bootstrap\js\bootstrap.min.js" />
+    <Content Include="client\bootstrap\js\jquery-1.8.0.min.js" />
+    <Content Include="client\default.htm" />
+    <Content Include="client\includes\css\style.css" />
+    <Content Include="client\includes\css\subnav.css" />
+    <Content Include="client\includes\js\angular.js" />
+    <Content Include="client\includes\js\highcharts-theme.js" />
+    <Content Include="client\includes\js\highcharts.js" />
+    <Content Include="client\includes\js\jquery-1.9.1.js" />
+    <Content Include="client\includes\js\jquery.signalR-1.0.1.js" />
+    <Content Include="client\includes\js\linq.js" />
+    <Content Include="client\includes\js\rxjs\rx.binding.js" />
+    <Content Include="client\includes\ts\angular.d.ts" />
+    <Content Include="client\includes\ts\highcharts.d.ts" />
+    <Content Include="client\includes\ts\jquery.d.ts" />
+    <Content Include="client\includes\ts\linq.d.ts" />
+    <Content Include="client\includes\ts\signalr.d.ts" />
+    <Content Include="client\pages\home.html" />
+    <Content Include="client\pages\login.html" />
+    <Content Include="client\templates\add-company.html" />
+    <Content Include="client\templates\navbar-full.html" />
+    <Content Include="client\templates\navbar-min.html" />
+    <Content Include="client\templates\portfolio.html" />
+    <Content Include="client\templates\company-chart.html" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <None Include="client\includes\js\rxjs\rx-vsdoc.js" />
+    <Content Include="client\includes\js\rxjs\rx.js" />
+    <Content Include="client\includes\js\rxjs\rx.min.js" />
+    <Content Include="client\includes\ts\rx.js.d.ts" />
+    <None Include="client\includes\js\rxjs\rx.aggregates-vsdoc.js" />
+    <Content Include="client\includes\js\rxjs\rx.aggregates.js" />
+    <Content Include="client\includes\js\rxjs\rx.aggregates.min.js" />
+    <Content Include="client\includes\js\rxjs\rx.min.js.map">
+      <DependentUpon>rx.js</DependentUpon>
+    </Content>
+    <None Include="client\includes\js\rxjs\rx.time-vsdoc.js" />
+    <Content Include="client\includes\js\rxjs\rx.time.js" />
+    <Content Include="client\includes\js\rxjs\rx.time.min.js" />
+    <Content Include="web.config" />
+    <Content Include="client\bootstrap\fontawesome\fontawesome\font\fontawesome-webfont.eot" />
+    <Content Include="client\bootstrap\fontawesome\fontawesome\font\fontawesome-webfont.svgz" />
+    <Content Include="client\bootstrap\fontawesome\fontawesome\font\fontawesome-webfont.ttf" />
+    <Content Include="client\bootstrap\fontawesome\fontawesome\font\fontawesome-webfont.woff" />
+    <Content Include="client\app.js.map">
+      <DependentUpon>app.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\interfaces.js.map">
+      <DependentUpon>interfaces.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\viewmodels.js.map">
+      <DependentUpon>viewmodels.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\controllers.js.map">
+      <DependentUpon>controllers.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\services.js.map">
+      <DependentUpon>services.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\model.js.map">
+      <DependentUpon>model.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\filters.js.map">
+      <DependentUpon>filters.ts</DependentUpon>
+    </Content>
+    <Content Include="client\app\directives.js.map">
+      <DependentUpon>directives.ts</DependentUpon>
+    </Content>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="client\includes\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AttributeRouting">
+      <HintPath>..\packages\AttributeRouting.Core.3.5.6\lib\net40\AttributeRouting.dll</HintPath>
+    </Reference>
+    <Reference Include="AttributeRouting.Web">
+      <HintPath>..\packages\AttributeRouting.Core.Web.3.5.6\lib\net40\AttributeRouting.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="AttributeRouting.Web.Http">
+      <HintPath>..\packages\AttributeRouting.Core.Http.3.5.6\lib\net40\AttributeRouting.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="AttributeRouting.Web.Http.WebHost">
+      <HintPath>..\packages\AttributeRouting.WebApi.3.5.6\lib\net40\AttributeRouting.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.1.0.1\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Owin.1.0.1\lib\net45\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.1\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.1.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.1.30214.0\lib\Net45\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.1.30214.0\lib\Net45\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.1.30214.0\lib\Net45\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.1.30214.0\lib\Net45\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.0.0.0\lib\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="server\AppStart\AttributeRoutingHttpConfig.cs" />
+    <Compile Include="server\AppStart\SignalrRoutingHttpConfig.cs" />
+    <Compile Include="server\controllers\PortfolioController.cs" />
+    <Compile Include="server\data\CompanyRepository.cs" />
+    <Compile Include="server\Model\Entity.cs" />
+    <Compile Include="server\realtime\RealtimePricingStream.cs" />
+    <Compile Include="server\Model\Company.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TradeZone</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57528</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51780/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>false</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+</Project>

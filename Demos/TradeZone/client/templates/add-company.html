@@ -1,0 +1,18 @@
+﻿<div class="controls">
+    <form ng-submit="homeViewModel.addCompany()" class="input-append">
+        Enter symbol: &nbsp;
+
+        <input maxlength="4" type="text" ng-model="homeViewModel.symbol" />
+
+        <input class="btn btn-warning"
+            value="Add"
+            type="submit" />
+
+        <div style="float: right">
+            Filter name/symbol: &nbsp;
+            <input maxlength="20"
+                type="text"
+                ng-model="homeViewModel.filter" />
+        </div>
+</form>
+</div>

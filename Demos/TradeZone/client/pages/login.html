@@ -1,0 +1,22 @@
+﻿
+<div ng-include="'templates/navbar-min.html'"></div>
+
+<div class="container content-area" ng-controller="LoginController">
+    <div class="login_box well">
+        <h2>Sign In</h2>
+        <hr />
+        <p>Sign in with your admin account.</p>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-user icon-white"></i></span>
+            <input size="16" type="text" placeholder="Username">
+        </div>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-pencil icon-white"></i></span>
+            <input size="16" type="password" placeholder="Password">
+        </div>
+        <p></p>
+        <div style="text-align: center;">
+            <button ng-click="Login()" class="btn btn-warning btn-large">Sign In</button>
+        </div>
+    </div>
+</div>
